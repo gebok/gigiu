@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center mb-2">
+                    <h2>Register</h2>
+                    <!-- <h6>Register Yourself</h6> -->
+                </div>
+                <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full name</label>
+                        <input formControlName="fullname" type="text" placeholder="firstname lastname"
+                            class="form-control mb-2" id="fullName">
+                        <!-- <div id="mobileHelp" class="form-text">Your firstname & lastname</div> -->
+                        <span
+                            *ngIf="signupForm.controls['fullname'].dirty && signupForm.hasError('required', 'fullname')"
+                            class="text-danger" class="text-danger">*Full name is required!</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobileNumber" class="form-label">Mobile number</label>
+                        <input formControlName="mobile" type="number" placeholder="mobile number"
+                            class="form-control mb-2" id="mobileNumber">
+                        <!-- <div id="mobileHelp" class="form-text">Must be 8 digits</div> -->
+                        <span *ngIf="signupForm.controls['mobile'].dirty && signupForm.hasError('required', 'mobile')"
+                            class="text-danger">*Mobile number is required!</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" placeholder="email address"
+                            class="form-control mb-2" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text">Your email will never be shared</div> -->
+                        <span *ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required', 'email')"
+                            class="text-danger">*Email address is required!</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input formControlName="password" type="password" placeholder="password"
+                            class="form-control mb-2" id="exampleInputPassword1">
+                        <!-- <div id="exampleInputPassword1Help" class="form-text">Must be 8-20 characters</div> -->
+                        <span
+                            *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required', 'password')"
+                            class="text-danger">*Password is required!</span>
+                    </div>
+                    <button class="btn btn-danger mb-2" mat-dialog-close="">Cancel</button>
+                    <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary mb-2">Signup</button>
+                </form>
+                <!-- <a [routerLink]="['/login']" class="text-end">Already registered? Click to login</a> -->
+                <span class="text-end">Already registered?
+                    <button mat-button (click)="login()" type="submit" mat-dialog-close="">Login</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

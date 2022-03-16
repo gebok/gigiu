@@ -1,0 +1,28 @@
+{
+  "signupUsers": [
+    {
+      "fullname": "Anna Agio",
+      "mobile": 76061118,
+      "email": "hq.receptionist@nari.org.pg",
+      "password": "1234567890",
+      "id": 1
+    },
+    {
+      "fullname": "Call Register",
+      "mobile": 76897651,
+      "email": "call.register@nari.org.pg",
+      "password": "1234567890",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

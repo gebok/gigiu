@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center mb-2">
+                    <h2>Login</h2>
+                    <!-- <h6>Please enter email & password</h6> -->
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" placeholder="email address"
+                            class="form-control  mb-2" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <div id="emailHelp" class="form-text mb-2">Enter your email address</div> -->
+                        <span *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required', 'email')"
+                            class="text-danger">*Email id is required!</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input formControlName="password" type="password" placeholder="password"
+                            class="form-control mb-2" id="exampleInputPassword1">
+                        <!-- <div id="passwordHelp" class="form-text mb-2">Must be 8-20 characters long</div> -->
+                        <span *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')"
+                            class="text-danger">*Password is required!</span>
+                    </div>
+
+                    <button class="btn btn-danger mb-2" mat-dialog-close="">Cancel</button>
+                    <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary mb-2">Login</button>
+
+                </form>
+                <span class="text-end">
+                    Don't have an account?
+                    <button type="submit" mat-button (click)="signIn()">Register</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

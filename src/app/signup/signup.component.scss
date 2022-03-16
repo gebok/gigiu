@@ -1,0 +1,56 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+    border: none;
+    width: 500px;
+    height: auto;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-family: 'Roboto Serif', serif;
+
+    transform: translate(-50%, -50%);
+    background: hsl(120, 100%, 11%);
+    background: linear-gradient(90deg, hsl(120, 100%, 11%) 0%, rgb(58, 164, 224) 100%);
+    border-radius: 10px;
+}
+
+.card h1, h6, span {
+    color: #fff;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1rem;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Roboto Serif', serif;
+    font-size: 2rem;
+}
+
+label {
+    color: #fff;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1rem;
+
+}
+
+a {
+    color: #fff;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+button {
+    margin-right: 10px;
+    font-family: 'Roboto Serif', serif;
+}
+
+span button {
+    margin-top: 10px;
+    font-family: 'Roboto Serif', serif;
+}

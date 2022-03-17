@@ -1,7 +1,4 @@
 {
-  "name": "gigiu",
-  "version": "0.0.0",
-  "homepage": " https://gebok.github.io/gigiu/",
   "scripts": {
     "ng": "ng",
     "predeploy": "npm run build",
@@ -9,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev": "lite-server"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +45,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lite-server": "^2.6.1",
     "typescript": "~4.5.2"
   }
 }

@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /** Custom imports */
+import { LoginModule } from 'src/app/login/login.module';
 import { RouterModule, Routes } from '@angular/router';
+
 import { LoginComponent } from 'src/app/login/components/login.component';
 import { SignupComponent } from 'src/app/signup/signup.component';
 
@@ -17,10 +19,13 @@ const routes: Routes = [
 
   imports: [
     CommonModule,
+
+    LoginModule,
     RouterModule.forRoot(routes)
   ],
 
   exports: [
+    LoginModule,
     RouterModule
   ]
 

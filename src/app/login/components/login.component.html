@@ -3,7 +3,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="text-center mb-2">
-                    <h2>Login</h2>
+                    <h2 mat-dialog-title>Login</h2>
                     <!-- <h6>Please enter email & password</h6> -->
                 </div>
                 <form [formGroup]="loginForm" (ngSubmit)="login()">
@@ -24,13 +24,16 @@
                             class="text-danger">*Password is required!</span>
                     </div>
 
-                    <button class="btn btn-danger mb-2" mat-dialog-close="">Cancel</button>
-                    <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary mb-2">Login</button>
-
                 </form>
+
+                <mat-dialog-actions>
+                    <button class="btn btn-danger mb-2" routerLink="">Cancel</button>
+                    <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary mb-2">Login</button>
+                </mat-dialog-actions>
+
                 <span class="text-end">
                     Don't have an account?
-                    <button type="submit" mat-button (click)="signIn()">Register</button>
+                    <button type="submit" mat-button>Register</button>
                 </span>
             </div>
         </div>

@@ -22,7 +22,7 @@
 
         <div fxShow="true" fxHide.lt-sm="true">
           <span>
-            <img src=".assets/images/nari_logo_new_100x100.png">
+            <img src="assets/images/nari_logo_new_100x100.png">
           </span>
         </div>
 
@@ -39,7 +39,7 @@
 
       <span class="button-spacer"></span>
       <div fxLayout="row" fxFlexAlign="end" fxShow="true" fxHide.lt-sm="true">
-        <button mat-icon-button class="tooltip">
+        <button mat-icon-button class="tooltip" [routerLink]="['']">
           <mat-icon>home</mat-icon>
           <span class="tooltiptext">Home</span>
         </button>
@@ -47,7 +47,7 @@
           <mat-icon>info</mat-icon>
           <span class="tooltiptext">About</span>
         </button>
-        <button mat-icon-button class="tooltip">
+        <button mat-icon-button class="tooltip" [routerLink]="['login']">
           <mat-icon>login</mat-icon>
           <span class="tooltiptext">Login</span>
         </button>

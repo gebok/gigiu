@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 /** Custom imports */
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { LoginComponent } from 'src/app/login/components/login.component';
+import { LoginComponent } from '../login/login.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 

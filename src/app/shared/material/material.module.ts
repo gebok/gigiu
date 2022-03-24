@@ -40,6 +40,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSidenavModule,
     MatToolbarModule,
   ],
-
+  
 })
 export class MaterialModule { }

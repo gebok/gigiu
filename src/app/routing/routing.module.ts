@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-/** Custom imports */
-import { LoginModule } from 'src/app/login/login.module';
-import { RouterModule, Routes } from '@angular/router';
-
-import { LoginComponent } from 'src/app/login/components/login.component';
-import { SignupComponent } from 'src/app/signup/signup.component';
+import { RouterModule, Routes } from '@angular/router';;
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'signup', component: SignupComponent },
-  // { path: 'calls', loadChildren: () => import ('../phone-call/phone-call.module').then(a => a.PhoneCallModule), canActivate: [Log] }
+  { path: '', 
+    loadChildren: () => import('../core/core.module').then(m => m.CoreModule)
+  },
+
+  { path: 'email-support', 
+    loadChildren: () => import('../email-support/email-support.module').then(m => m.EmailSupportModule)
+  },
+
+  { path: 'calls', 
+    loadChildren: () => import('../phone-call/phone-call.module').then(m => m.PhoneCallModule)
+  },
 ];
 
 @NgModule({
@@ -19,15 +21,13 @@ const routes: Routes = [
 
   imports: [
     CommonModule,
-
-    LoginModule,
     RouterModule.forRoot(routes)
   ],
 
   exports: [
-    LoginModule,
-    RouterModule
+    RouterModule,
   ]
 
 })
+
 export class RoutingModule { }

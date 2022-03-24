@@ -5,12 +5,13 @@ import { PhoneCallCreateEditComponent } from './components/phone-call-create-edi
 import { PhoneCallViewComponent } from './container/phone-call-view.component';
 
 const routes: Routes = [
-  { path: 'calls', component: PhoneCallViewComponent },
-  { path: 'calls/create-edit', component: PhoneCallCreateEditComponent }
+  { path: '', component: PhoneCallViewComponent },
+  { path: 'calls/create-edit', component: PhoneCallCreateEditComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
+
   exports: [RouterModule]
 })
 export class PhoneCallRoutingModule { }

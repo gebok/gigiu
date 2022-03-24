@@ -11,20 +11,20 @@
     border: none;
     width: 500px;
     height: auto;
-    padding: 40px;
+    padding: 20px;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: hsl(120, 100%, 11%);
-    background: linear-gradient(90deg, hsl(120, 100%, 11%) 0%, rgb(58, 164, 224) 100%);
+    background: hsl(120, 1%, 72%);
+    background: linear-gradient(90deg, hsl(120, 3%, 79%) 0%, rgb(154, 168, 177) 100%);
 
     border-radius: 10px;
 
 }
 
 .card h1, h6, span {
-    color: #fff;
+    color: #000;
     font-family: 'Roboto Serif', serif;
     font-size: 1rem;
 }
@@ -32,14 +32,15 @@
 h2 {
     font-family: 'Roboto Serif', serif;
     font-size: 2rem;
+    color: #000;
 }
 
-.card text-danger {
-    color: red;
-}
+// .text-danger {
+//     color: red;
+// }
 
 label {
-    color: #fff;
+    color: #000;
     font-family: 'Roboto Serif', serif;
     font-size: 1rem;
 }
@@ -58,7 +59,9 @@ button {
     font-family: 'Roboto Serif', serif;
 }
 
-span button {
+span {
     margin-top: 10px;
+}
+span button {
     font-family: 'Roboto Serif', serif;
 }

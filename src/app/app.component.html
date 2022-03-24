@@ -1,4 +1,10 @@
-<div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper">
+<app-header></app-header>
+
+<app-sidenav></app-sidenav>
+
+<router-outlet></router-outlet>
+
+<!-- <div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper">
   <div fxFlex="98%" fxFlex.lt-md="100%" class="flex-wrapper">
     
     <mat-toolbar>
@@ -56,29 +62,29 @@
     </mat-toolbar>
 
   </div>
-</div>
+</div> -->
 
-<mat-sidenav-container>
+<!-- <mat-sidenav-container>
   <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
 
-    <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
+    <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
 
     <h4 class="name">John Smith</h4>
-    <p class="designation">Software Engineer</p> -->
+    <p class="designation">Software Engineer</p> 
 
     <div mat-button class="menu-title"> 
       <mat-icon>format_list_bulleted</mat-icon>
-      Applications
+     Menu
     </div>
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="menu-button" [routerLink]="['calls']">
+    <button mat-button class="menu-button" [routerLink]="['']">
       <mat-icon>home</mat-icon>
       <span>home</span>
     </button>
 
-    <button mat-button class="menu-button" [routerLink]="['calls/create-edit']">
+    <button mat-button class="menu-button" [routerLink]="['']">
       <mat-icon>contact_phone</mat-icon>
       <span>menu one</span>
     </button>
@@ -108,4 +114,4 @@
     </div>
   </mat-sidenav-content>
   
-</mat-sidenav-container>
+</mat-sidenav-container> -->

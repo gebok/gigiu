@@ -1,0 +1,51 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+        <!-- <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
+
+    <h4 class="name">John Smith</h4>
+    <p class="designation">Software Engineer</p> -->
+
+        <div mat-button class="menu-title">
+            <mat-icon>format_list_bulleted</mat-icon>
+            Menu
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button" [routerLink]="['email-support']">
+            <mat-icon>contact_mail</mat-icon>
+            <span>Thunderbird</span>
+        </button>
+
+        <button mat-button class="menu-button" [routerLink]="['calls']">
+            <mat-icon>contact_phone</mat-icon>
+            <span>menu one</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>contacts</mat-icon>
+            <span>menu two</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>people</mat-icon>
+            <span>menu three</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>help</mat-icon>
+            <span>Help</span>
+        </button>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+
+            <router-outlet></router-outlet>
+
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

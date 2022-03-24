@@ -7,6 +7,7 @@ import { PhoneCallRoutingModule } from './phone-call-routing.module';
 import { PhoneCallService } from './services/phone-call.service';
 
 @NgModule({
+  
   declarations: [  
     PhoneCallCreateEditComponent,
     PhoneCallViewComponent

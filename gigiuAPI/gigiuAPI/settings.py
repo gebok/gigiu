@@ -28,11 +28,12 @@ DEBUG = True
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:4200',
-    'http://localhost:4300',
-    'http://localhost:3000',
+    'http://127.0.0.1:8000',
 )
 
 ALLOWED_HOSTS = []
+
+AUTH_USER_MODEL = 'authentication.User'
 
 # Application definition
 
@@ -44,9 +45,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gigiucall.apps.GigiucallConfig',
+    
+    # 3rd party apps
     'rest_framework',
     'psycopg2',
+    
+    # Local apps
+    'authentication.apps.AuthenticationConfig',
+    'gigiuattendance.apps.GigiuattendanceConfig',
+    'gigiucall.apps.GigiucallConfig',
+    'gigiuhr.apps.GigiuhrConfig',
 ]
 
 MIDDLEWARE = [

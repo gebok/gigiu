@@ -1,7 +1,108 @@
-<div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper">
-    <div fxFlex="98%" fxFlex.lt-md="100%" class="flex-wrapper">
 
-        <mat-toolbar>
+<mat-toolbar class="mat-toolbar-container">
+
+      <mat-toolbar-row>
+        <span class="button-spacer"></span>
+        <div fxShow fxHide.xs="true" fxHide.sm="true">
+
+            <button mat-icon-button class="tooltip" [routerLink]="['']">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="tooltiptext">Search</span>
+            </button>
+
+            <button mat-icon-button class="tooltip" [routerLink]="['']">
+                <i class="fa-solid fa-house"></i>
+                <span class="tooltiptext">Home</span>
+            </button>
+
+            <button mat-icon-button class="tooltip">
+                <a href="http://www.facebook.com/naripng/">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <span class="tooltiptext">Facebook</span>
+                </a>
+            </button>
+
+            <button mat-icon-button class="tooltip" [routerLink]="['']">
+                <i class="fa-brands fa-youtube"></i>
+                <span class="tooltiptext">YouTube</span>
+            </button>
+
+            <button mat-icon-button class="tooltip">
+                <!-- <mat-icon>login</mat-icon> -->
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <span class="tooltiptext">Login</span>
+            </button>
+
+        </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+
+      <div fxHide fxShow.xs="true" fxShow.sm="true">
+          <span>
+              <img src="assets/images/nari_logo_50x50.png">
+          </span>
+      </div>
+
+      <div fxHide fxShow.md="true">
+          <span>
+              <img src="assets/images/nari_logo_70x70.png">
+          </span>
+      </div>
+
+      <div fxShow fxHide.xs="true" fxHide.sm="true" fxHide.md="true">
+          <span>
+              <img src="assets/images/nari_logo_new_100x100.png">
+          </span>
+      </div>
+      <div>
+          <span>
+              <h1>National Agricultural Research Institute</h1>
+          </span>
+          <span>
+              <h6>Promoting Agricultural Research for Sustainable Development</h6>
+          </span>
+      </div>
+
+      <span class="button-spacer"></span>
+      <div fxShow fxHide.xs="true" fxHide.sm="true" class="header-menu">
+          <!-- <mat-form-field>
+              <mat-label>Search <i class="fa-solid fa-magnifying-glass"></i></mat-label>
+              <input matInput>
+          </mat-form-field>-->
+          <!-- <button mat-icon-button class="tooltip" [routerLink]="['']">
+              <mat-icon>home</mat-icon> -->
+              <!-- <i class="fa-solid fa-house"></i>
+              <span class="tooltiptext">Home</span>
+          </button> -->
+
+          <!-- <button mat-icon-button class="tooltip"> -->
+              <!-- <mat-icon>info</mat-icon> -->
+              <!-- <i class="fa-solid fa-circle-info"></i>
+              <span class="tooltiptext">About Us</span>
+          </button> -->
+
+          <!-- <button mat-icon-button class="tooltip"> -->
+              <!-- <mat-icon>info</mat-icon> -->
+              <!-- <i class="fa-solid fa-address-card"></i> -->
+              <!-- <span class="tooltiptext">Contact Us</span>
+          </button>-->
+
+      </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+
+
+
+
+
+
+<!--<div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper">-->
+<!--    <div fxFlex="98%" fxFlex.lt-md="100%" class="flex-wrapper">-->
+
+<!--        <mat-toolbar class="mat-toolbar-container">-->
 
             <!-- <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
                 <mat-icon *ngIf="!sidenav.opened">
@@ -12,52 +113,52 @@
                 </mat-icon>
             </button> -->
 
-            <div fxHide.gt-xs>
-                <span>
-                    <img src="assets/images/nari_logo_70x70.png">
-                </span>
-            </div>
+<!--            <div fxHide.gt-xs>-->
+<!--                <span>-->
+<!--                    <img src="assets/images/nari_logo_70x70.png">-->
+<!--                </span>-->
+<!--            </div>-->
 
-            <div fxShow.gt-sm fxLayout="row" fxLayoutAlign="space-between">
+<!--            <div fxShow.gt-sm fxLayout="row" fxLayoutAlign="space-between">-->
 
-                <div fxShow="true" fxHide.lt-sm="true">
-                    <span>
-                        <img src="assets/images/nari_logo_new_100x100.png">
-                    </span>
-                </div>
+<!--                <div fxShow="true" fxHide.lt-sm="true">-->
+<!--                    <span>-->
+<!--                        <img src="assets/images/nari_logo_new_100x100.png">-->
+<!--                    </span>-->
+<!--                </div>-->
 
-                
-                <div>
-                    <span>
-                        <h1>National Agricultural Research Institute</h1>
-                    </span>
-                    <span>
-                        <h6>Promoting Agricultural Research for Sustainable Development</h6>
-                    </span>
-                </div>
 
-            </div>
+<!--                <div>-->
+<!--                    <span>-->
+<!--                        <h1>National Agricultural Research Institute</h1>-->
+<!--                    </span>-->
+<!--                    <span>-->
+<!--                        <h6>Promoting Agricultural Research for Sustainable Development</h6>-->
+<!--                    </span>-->
+<!--                </div>-->
 
-            <span class="button-spacer"></span>
-            <div fxLayout="row" fxFlexAlign="end" fxShow="true" fxHide.lt-sm="true">
-                <button mat-icon-button class="tooltip" [routerLink]="['']">
-                    <mat-icon>home</mat-icon>
-                    <span class="tooltiptext">Home</span>
-                </button>
-                <button mat-icon-button class="tooltip">
-                    <mat-icon>info</mat-icon>
-                    <span class="tooltiptext">About</span>
-                </button>
-                <button mat-icon-button class="tooltip" [routerLink]="['login']">
-                    <mat-icon>login</mat-icon>
-                    <span class="tooltiptext">Login</span>
-                </button>
-            </div>
+<!--            </div>-->
 
-        </mat-toolbar>
+<!--            <span class="button-spacer"></span>-->
+<!--            <div fxLayout="row" fxFlexAlign="end" fxShow="true" fxHide.lt-sm="true">-->
+<!--                <button mat-icon-button class="tooltip" [routerLink]="['']">-->
+<!--                    <mat-icon>home</mat-icon>-->
+<!--                    <span class="tooltiptext">Home</span>-->
+<!--                </button>-->
+<!--                <button mat-icon-button class="tooltip">-->
+<!--                    <mat-icon>info</mat-icon>-->
+<!--                    <span class="tooltiptext">About</span>-->
+<!--                </button>-->
+<!--                <button mat-icon-button class="tooltip" [routerLink]="['login']">-->
+<!--                    <mat-icon>login</mat-icon>-->
+<!--                    <span class="tooltiptext">Login</span>-->
+<!--                </button>-->
+<!--            </div>-->
 
-    </div>
-</div>
+<!--        </mat-toolbar>-->
+
+<!--    </div>-->
+<!--</div>-->
 
 <!--<mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
@@ -65,7 +166,7 @@
          <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
 
     <h4 class="name">John Smith</h4>
-    <p class="designation">Software Engineer</p> 
+    <p class="designation">Software Engineer</p>
 
         <div mat-button class="menu-title">
             <mat-icon>format_list_bulleted</mat-icon>

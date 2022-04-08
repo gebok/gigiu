@@ -1,4 +1,4 @@
-"""gigiuAPI URL Configuration
+"""authentication URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -14,10 +14,5 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('calls/', include('gigiucall.urls')),
-    path('hr/', include('gigiuhr.urls')),
-]
+urlpatterns = []

@@ -2,7 +2,8 @@
 
 mat-sidenav {
     margin: 16px;
-    width: 200px;
+    width: 250px;
+    height: fit-content;
     border-right: none;
     background: #d4d4d4;
     color: #000;
@@ -18,8 +19,7 @@ mat-sidenav div {
 .content {
     height: calc(100% - 40px);
     border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
+    margin: 16px 16px 16px 32px; // top, right, bottom & left
 
     display: flex;
     justify-content: center;

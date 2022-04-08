@@ -9,6 +9,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { CoreRoutingModule } from './core-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../shared/material/material.module';
+import { PrimengModule } from '../shared/primeng/primeng.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IndexComponent } from './components/index/index.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -30,6 +31,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CoreRoutingModule,
     FlexLayoutModule,
     MaterialModule,
+    PrimengModule,
     ReactiveFormsModule
   ],
 
@@ -41,6 +43,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CommonModule,
     CoreRoutingModule,
     MaterialModule,
+    PrimengModule,
     ReactiveFormsModule
   ],
 

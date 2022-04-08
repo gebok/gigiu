@@ -37,4 +37,3 @@ class CallRegisterDetail(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mix
 
     def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, *kwargs)
-
